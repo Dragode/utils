@@ -9,7 +9,6 @@ import org.apache.commons.lang3.StringUtils;
  * @version 1.0
  * @date 2017/6/13 0013
  */
-//TODO 编写测试用例
 public class NamingStrategyConverter {
 
     private static final String UNDERLINE = "_";
@@ -72,13 +71,5 @@ public class NamingStrategyConverter {
             camelName = camelNameBuilder.toString();
         }
         return camelName;
-    }
-
-    public static void main(String[] args) {
-        /*System.out.println(fromCamelToUnderline("camelName"));
-        System.out.println(fromCamelToUnderline("camel"));*/
-        System.out.println(fromUnderlineToCamel("underline_name"));
-        System.out.println(fromUnderlineToCamel("underline_"));
-        System.out.println(fromUnderlineToCamel("_underline"));
     }
 }
