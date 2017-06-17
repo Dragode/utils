@@ -10,6 +10,8 @@ import java.lang.reflect.Field;
 
 /**
  * 如果主键显式设定了值，则用设定的值，不自动生成ID
+ * <p>
+ * 因为primitive type无法设置成bull值，所以对primitive type无效
  *
  * @author Dragode
  */
